@@ -18,32 +18,31 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <style>
-  /* ... CSS lama kamu yang sudah ada ... */
-  
-  /* ▼▼▼ PASTE KODE INI PALING BAWAH ▼▼▼ */
-  /* Force Background Hitam */
-  :root {
+ /* Force Background Hitam */
+:root {
     --secondary-color: #fff;
     --light-bg: #1a1a1a;
     --dark-bg: #000;
     --text-color: #fff;
     --text-light: #888;
-  }
-  
-  body {
+}
+
+body {
     background-color: #000;
-  }
-  
-  .hero, .features, .product, 
-  .newsletter, .instagram, .footer,
-  .product__sidebar {
+}
+
+.hero, .features, .product, 
+.newsletter, .instagram, .footer,
+.product__sidebar {
     background-color: #000 !important;
-  }
-        .product__sidebar__view__item .view {
+}
+
+.product__sidebar__view__item .view {
     font-size: 10px !important;
     padding: 3px 8px !important;
 }
-        /* 1. Nonaktifkan efek hide di semua device */
+
+/* 1. Nonaktifkan efek hide di semua device */
 .product__item__text {
     opacity: 1 !important;
     visibility: visible !important;
@@ -63,22 +62,25 @@
         background: white;
         color: black !important;
         padding: 15px;
+        border-radius: 0 0 8px 8px;
     }
     
     .product__item__text h5 a {
-        color: black !important; /* Pastikan warna teks hitam */
-        font-weight: 600; /* Tambahkan ketebalan font jika perlu */
+        color: #FF4500 !important; /* Warna oranye solid */
+        font-weight: 700;
+        text-decoration: underline;
+        text-decoration-color: #FF9500;
+        transition: all 0.3s ease;
+    }
+    
+    .product__item__text h5 a:hover {
+        color: #E53935 !important; /* Warna lebih gelap saat hover */
     }
 
     .product__item__text ul li,
     .product__item__text .price,
     .product__item__text .rating {
         color: #555 !important;
-    }
-}
-    
-    .product__item__text h5 a {
-        color: var(--text-color) !important;
     }
 }
     
