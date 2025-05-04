@@ -17,22 +17,44 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <style>
+  /* ... CSS lama kamu yang sudah ada ... */
+  
+  /* ▼▼▼ PASTE KODE INI PALING BAWAH ▼▼▼ */
+  /* Force Background Hitam */
+  :root {
+    --secondary-color: #fff;
+    --light-bg: #1a1a1a;
+    --dark-bg: #000;
+    --text-color: #fff;
+    --text-light: #888;
+  }
+  
+  body {
+    background-color: #000;
+  }
+  
+  .hero, .features, .product, 
+  .newsletter, .instagram, .footer,
+  .product__sidebar {
+    background-color: #000 !important;
+  }
     
     <style>
         :root {
             --primary-color: #ff4d4d;
-            --secondary-color: #333;
+            --secondary-color: #fff;
             --accent-color: #ff9a3c;
-            --light-bg: #f8f9fa;
-            --dark-bg: #1a1a1a;
-            --text-color: #333;
-            --text-light: #777;
+            --light-bg: #1a1a1a; 
+            --dark-bg: #000;  
+            --text-color: #fff;
+            --text-light: #888; 
         }
         
         body {
             font-family: 'Poppins', sans-serif;
             color: var(--text-color);
-            background-color: #f5f5f5;
+            background-color: #000;
             overflow-x: hidden;
         }
         
