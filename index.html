@@ -83,84 +83,6 @@ body {
         color: #555 !important;
     }
 }
-         /* Top Selling Section Improvements */
-    .product__sidebar__view__item {
-        height: 100px; /* Reduced height */
-        margin-bottom: 15px;
-        border-radius: 8px;
-        transition: all 0.3s;
-    }
-    
-    .product__sidebar__view__item:hover {
-        transform: scale(1.02);
-        box-shadow: 0 5px 15px rgba(255, 77, 77, 0.3);
-    }
-    
-    .product__sidebar__view__item .ep {
-        font-size: 10px !important;
-        padding: 2px 8px !important;
-        top: 8px;
-        left: 8px;
-    }
-    
-    .product__sidebar__view__item .view {
-        font-size: 10px !important;
-        padding: 2px 6px !important;
-        bottom: 8px;
-        right: 8px;
-        background: rgba(0,0,0,0.7);
-        border-radius: 3px;
-    }
-    
-    .product__sidebar__view__item h5 {
-        font-size: 13px !important;
-        bottom: 25px;
-        left: 10px;
-        right: 10px;
-        line-height: 1.3;
-    }
-    
-    .filter__gallery {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
-    }
-    
-    /* Make price smaller and more subtle */
-    .product__sidebar__view__item .view i {
-        font-size: 9px;
-        margin-right: 3px;
-    }
-    
-    /* Adjust sidebar banner */
-    .sidebar__banner {
-        margin-top: 30px;
-        border-radius: 8px;
-        overflow: hidden;
-        position: relative;
-    }
-    
-    .sidebar__banner__text {
-        position: absolute;
-        bottom: 20px;
-        left: 20px;
-        color: white;
-    }
-    
-    .sidebar__banner__text h4 {
-        font-size: 18px;
-        margin-bottom: 5px;
-    }
-    
-    .sidebar__banner__text h3 {
-        font-size: 24px;
-        margin-bottom: 10px;
-    }
-    
-    .sidebar__banner__text .primary-btn {
-        padding: 8px 15px;
-        font-size: 12px;
-    }
     
     <style>
         :root {
@@ -1315,43 +1237,49 @@ body {
                     </div>
                 </div>
                 
-             <div class="product__sidebar">
-    <div class="product__sidebar__view">
-        <div class="section-title">
-            <h5>Top Selling</h5>
-        </div>
-        <ul class="filter__controls">
-            <li class="active" data-filter="*">Day</li>
-            <li data-filter=".week">Week</li>
-            <li data-filter=".month">Month</li>
-            <li data-filter=".years">Year</li>
-        </ul>
-        <div class="filter__gallery">
-            <div class="product__sidebar__view__item set-bg mix day years" data-setbg="img/sidebar/luffy-gear5.png">
-                <div class="ep">100 sold</div>
-                <div class="view"><i class="fas fa-eye"></i> Rp.2.5M</div>
-                <h5><a href="#">Luffy Gear 5 Action Figure</a></h5>
-            </div>
-            <div class="product__sidebar__view__item set-bg mix month week" data-setbg="img/sidebar/persona5-royal.jpg">
-                <div class="ep">90 sold</div>
-                <div class="view"><i class="fas fa-eye"></i> Rp.600K</div>
-                <h5><a href="#">Persona 5 Royal</a></h5>
-            </div>
-            <div class="product__sidebar__view__item set-bg mix week years" data-setbg="img/sidebar/persona3-reload.jpg">
-                <div class="ep">85 sold</div>
-                <div class="view"><i class="fas fa-eye"></i> Rp.700K</div>
-                <h5><a href="#">Persona 3 Reload</a></h5>
-            </div>
-            <div class="product__sidebar__view__item set-bg mix years month" data-setbg="img/sidebar/zoro-santoryu.jpg">
-                <div class="ep">70 sold</div>
-                <div class="view"><i class="fas fa-eye"></i> Rp.1.8M</div>
-                <h5><a href="#">Zoro Santoryu Pose</a></h5>
-            </div>
-            <div class="product__sidebar__view__item set-bg mix day" data-setbg="img/sidebar/onepiece-komik.jpg">
+                <div class="col-lg-4 col-md-6 col-sm-8">
+                    <div class="product__sidebar">
+                        <div class="product__sidebar__view">
+                            <div class="section-title">
+                                <h5>Top Selling</h5>
+                            </div>
+                            <ul class="filter__controls">
+                                <li class="active" data-filter="*">Day</li>
+                                <li data-filter=".week">Week</li>
+                                <li data-filter=".month">Month</li>
+                                <li data-filter=".years">Year</li>
+                            </ul>
+                            <div class="filter__gallery">
+                                <div class="product__sidebar__view__item set-bg mix day years"
+                                data-setbg="img/sidebar/luffy-gear5.png">
+                                <div class="ep">100 sold</div>
+                                <div class="view"><i class="fas fa-eye"></i> Rp.2.500.000</div>
+                                <h5><a href="#">Luffy Gear 5 Action Figure</a></h5>
+                            </div>
+                            <div class="product__sidebar__view__item set-bg mix month week"
+                            data-setbg="img/sidebar/persona5-royal.jpg">
+                            <div class="ep">90 sold</div>
+                            <div class="view"><i class="fas fa-eye"></i> Rp.600.000</div>
+                            <h5><a href="#">Persona 5 Royal</a></h5>
+                        </div>
+                        <div class="product__sidebar__view__item set-bg mix week years"
+                        data-setbg="img/sidebar/persona3-reload.jpg">
+                        <div class="ep">85 sold</div>
+                        <div class="view"><i class="fas fa-eye"></i> Rp.700.000</div>
+                        <h5><a href="#">Persona 3 Reload</a></h5>
+                    </div>
+                    <div class="product__sidebar__view__item set-bg mix years month"
+                    data-setbg="img/sidebar/zoro-santoryu.jpg">
+                    <div class="ep">70 sold</div>
+                    <div class="view"><i class="fas fa-eye"></i> Rp.1.800.000</div>
+                    <h5><a href="#">Zoro Santoryu Pose</a></h5>
+                </div>
+                <div class="product__sidebar__view__item set-bg mix day"
+                data-setbg="img/sidebar/onepiece-komik.jpg">
                 <div class="ep">60 sold</div>
-                <div class="view"><i class="fas fa-eye"></i> Rp.60K/vol</div>
+                <div class="view"><i class="fas fa-eye"></i> Rp.60.000/vol</div>
                 <h5><a href="#">One Piece Vol. 1-10</a></h5>
-            </div> 
+            </div>
         </div>
     </div>
     
