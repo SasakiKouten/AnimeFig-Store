@@ -709,21 +709,25 @@ body {
 .ad-banner-carousel {
   position: relative;
   width: 100%;
-  height: auto;
+  min-height: 300px; /* ➕ Menambahkan tinggi minimum agar kontainer terlihat */
 }
 
 .ad-banner-slide {
   display: none;
   position: absolute;
   width: 100%;
+  height: 100%;
+  opacity: 0;
   transition: opacity 1s ease-in-out;
 }
 
 .ad-banner-slide.active {
   display: block;
   opacity: 1;
+  position: relative;
   z-index: 1;
 }
+
 
 .ad-banner-slide img {
   width: 100%;
