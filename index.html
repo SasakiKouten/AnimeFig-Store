@@ -1523,36 +1523,6 @@ body {
 <script src="js/main.js"></script>
 
 <script>
-    // Header scroll effect
-    $(window).scroll(function() {
-        if ($(this).scrollTop() > 100) {
-            $('.header').addClass('scrolled');
-        } else {
-            $('.header').removeClass('scrolled');
-        }
-    });
-    
-    // Wishlist toggle
-    $('.wishlist-btn').on('click', function(e) {
-        e.preventDefault();
-        $(this).toggleClass('active');
-        $(this).find('i').toggleClass('far fas');
-    });
-    
-    // Mobile menu toggle
-    $('.mobile-menu-btn').on('click', function() {
-        $('.header__nav').slideToggle();
-    });
-    
-    // Scroll to top
-    $('#scrollToTopButton').click(function() {
-        $('html, body').animate({scrollTop: 0}, 800);
-        return false;
-    });
-    
-
-
-<script>
   // Rotating Banner Script
   document.addEventListener("DOMContentLoaded", function () {
     let currentSlide = 0;
@@ -1582,6 +1552,7 @@ body {
     });
   });
 </script>
+    
 </body>
 </html>
 
