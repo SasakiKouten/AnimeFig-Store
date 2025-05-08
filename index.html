@@ -707,10 +707,11 @@ body {
 }
 
 
+
 .ad-banner-carousel {
   position: relative;
   width: 100%;
-  height: 300px;
+  height: 180px;
   overflow: hidden;
 }
 
@@ -738,6 +739,7 @@ body {
   height: 100%;
   object-fit: cover;
 }
+
 
 
 .ad-banner-text {
@@ -1527,6 +1529,7 @@ body {
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/main.js"></script>
 
+
 <script>
   // Rotating Banner Script
   document.addEventListener("DOMContentLoaded", function () {
@@ -1534,7 +1537,6 @@ body {
     const slides = document.querySelectorAll(".ad-banner-slide");
     const dots = document.querySelectorAll(".dot");
 
-    
     function showSlide(index) {
       slides.forEach((slide, i) => {
         if (i === index) {
@@ -1545,11 +1547,6 @@ body {
         dots[i].classList.toggle("active", i === index);
       });
     }
-    );
-      slides[index].classList.add("active");
-      dots[index].classList.add("active");
-      currentSlide = index;
-    }
 
     function autoRotate() {
       currentSlide = (currentSlide + 1) % slides.length;
@@ -1558,12 +1555,12 @@ body {
 
     setInterval(autoRotate, 3000);
 
-    // Optional: enable manual dot click
     dots.forEach((dot, index) => {
       dot.addEventListener("click", () => showSlide(index));
     });
   });
 </script>
+    
     
 </body>
 </html>
