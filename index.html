@@ -827,6 +827,35 @@ body {
 
 </style>
 
+
+<style>
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.feature__item {
+    animation: fadeInUp 1s ease forwards;
+    opacity: 0;
+}
+
+.feature__item:nth-child(1) {
+    animation-delay: 0.2s;
+}
+.feature__item:nth-child(2) {
+    animation-delay: 0.4s;
+}
+.feature__item:nth-child(3) {
+    animation-delay: 0.6s;
+}
+</style>
+
 </head>
 
 <body>
@@ -842,7 +871,7 @@ body {
                 <div class="col-lg-2 col-md-3 col-6">
                     <div class="header__logo">
                         <a href="./index.html">
-                            <img src="img/trending/logo.png" alt="AnimeFig Store">
+                            <img src="logo-large.png" alt="AnimeFig Store" style="max-height: 80px;">
                         </a>
                     </div>
                 </div>
@@ -869,42 +898,37 @@ body {
                 </div>
         </div>
     </header>
+<section class="features spad">
+  <div class="container">
+    <div class="row text-white text-center">
+      <div class="col-lg-4">
+        <div class="feature__item p-4 bg-dark rounded shadow">
+          <i class="fas fa-star fa-3x mb-3 text-warning"></i>
+          <h5>Figure of the Week</h5>
+          <p>Discover our exclusive spotlight figure, refreshed weekly!</p>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="feature__item p-4 bg-dark rounded shadow">
+          <i class="fas fa-book-open fa-3x mb-3 text-info"></i>
+          <h5>Did You Know?</h5>
+          <p>Learn quirky and interesting anime & manga facts!</p>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="feature__item p-4 bg-dark rounded shadow">
+          <i class="fas fa-torii-gate fa-3x mb-3 text-danger"></i>
+          <h5>Japanese Culture Insights</h5>
+          <p>Dive into the traditions behind your favorite characters.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
     <!-- Header End -->
     <!-- Features Section -->
-    <section class="features spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6">
-                    <div class="feature__item">
-                        <i class="fas fa-shipping-fast"></i>
-                        <h5>Free Shipping</h5>
-                        <p>On orders over $100</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="feature__item">
-                        <i class="fas fa-undo"></i>
-                        <h5>Easy Returns</h5>
-                        <p>30-day return policy</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="feature__item">
-                        <i class="fas fa-lock"></i>
-                        <h5>Secure Payment</h5>
-                        <p>100% secure checkout</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="feature__item">
-                        <i class="fas fa-headset"></i>
-                        <h5>24/7 Support</h5>
-                        <p>Dedicated support</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    
 
     <!-- Product Section Begin -->
     <section class="product spad">
@@ -1613,6 +1637,25 @@ body {
 </script>
     
     
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const items = document.querySelectorAll(".feature__item");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = 1;
+      }
+    });
+  }, {
+    threshold: 0.1
+  });
+
+  items.forEach(item => observer.observe(item));
+});
+</script>
+
 </body>
 </html>
 
