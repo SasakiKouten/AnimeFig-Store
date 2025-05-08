@@ -1575,6 +1575,11 @@ body {
     }
 
     setInterval(autoRotate, 3000);
+
+    // Optional: enable manual dot click
+    dots.forEach((dot, index) => {
+      dot.addEventListener("click", () => showSlide(index));
+    });
   });
 </script>
 </body>
