@@ -877,6 +877,17 @@ body {
 
     <!-- Header Section Begin -->
     <header class="header">
+        <div class="mobile-menu-toggle d-md-none d-block text-end pe-3">
+            <i class="fas fa-bars text-white fs-3" id="mobileMenuBtn"></i>
+        </div>
+        <div id="mobileMenu" class="d-md-none d-block bg-dark text-white p-3 position-absolute w-100" style="top: 80px; display: none; z-index: 999;">
+            <ul class="list-unstyled m-0">
+                <li class="mb-2"><a href="./index.html" class="text-white">Home</a></li>
+                <li class="mb-2"><a href="./categories.html" class="text-white">Shop</a></li>
+                <li><a href="./blog.html" class="text-white">About Us!</a></li>
+            </ul>
+        </div>
+
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-2 col-md-3 col-6">
@@ -1653,6 +1664,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
   items.forEach(item => observer.observe(item));
 });
+</script>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const btn = document.getElementById("mobileMenuBtn");
+    const menu = document.getElementById("mobileMenu");
+    if (btn && menu) {
+      btn.addEventListener("click", function () {
+        menu.style.display = menu.style.display === "none" ? "block" : "none";
+      });
+    }
+  });
 </script>
 
 </body>
