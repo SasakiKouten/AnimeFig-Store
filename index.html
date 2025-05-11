@@ -868,6 +868,30 @@ body {
 </script>
 <!-- End Google Analytics -->
 
+
+<style>
+/* Non-sticky navbar untuk HP */
+@media (max-width: 768px) {
+    .navbar, header, .main-header {
+        position: static !important;
+    }
+}
+
+/* Tambahkan jarak bawah pada banner slider */
+.banner-slider {
+    margin-bottom: 40px !important;
+}
+
+/* Tambahkan teks PREVIEW sebelum banner */
+.preview-label {
+    color: #FFD700;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1rem;
+}
+</style>
+
 </head>
 
 <body>
@@ -934,7 +958,12 @@ body {
     <!-- Product Section Begin -->
     <section class="product spad">
         <div class="container">
-            <div class="ad-banner-container">
+            
+<div class="preview-label text-center" style="color: #FFD700; font-size: 1.8rem; font-weight: bold; margin-bottom: 20px;">
+  PREVIEW
+</div>
+
+<div class="ad-banner-container" style="margin-bottom: 50px;">
   <div class="ad-banner-carousel">
     <div class="ad-banner-slide active">
       <img src="img/live/live-1.jpg" alt="Exclusive Deals">
