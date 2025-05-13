@@ -960,7 +960,34 @@ body {
         padding: 3px 8px;
     }
 }
-</style></head>
+</style>
+<style>
+.top-selling-section {
+  position: relative;
+  overflow: hidden;
+  padding: 60px 0;
+  background-color: #000; /* fallback */
+}
+
+.top-selling-section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background-image: url('img/top-selling-bg.png');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.2;
+  filter: blur(10px);
+  z-index: 1;
+}
+
+.top-selling-section .container {
+  position: relative;
+  z-index: 2;
+}
+</style>
+
+</head>
 <body>
 <div id="preloder">
 <div class="loader"></div>
