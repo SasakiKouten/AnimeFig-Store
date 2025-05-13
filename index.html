@@ -889,34 +889,40 @@ body {
 </div>
 <!-- Header Section Begin -->
 <header class="header">
-<div class="mobile-menu-toggle d-md-none d-block text-end pe-3">
-<i class="fas fa-bars text-white fs-3" id="mobileMenuBtn"></i>
+<div class="container">
+<div class="row">
+<div class="col-lg-2">
+<div class="header__logo">
+<a href="./index.html">
+<img alt="" src="img/trending/logo.png"/>
+</a>
 </div>
-<div class="d-md-none d-block bg-dark text-white p-3 position-absolute w-100" id="mobileMenu" style="top: 80px; display: none; z-index: 999;">
-<ul class="list-unstyled m-0">
-<li class="mb-2"><a class="text-white" href="./index.html">Home</a></li>
-<li class="mb-2"><a class="text-white" href="./categories.html">Shop</a></li>
-<li><a class="text-white" href="./blog.html">About Us!</a></li>
-</ul>
 </div>
-
-<div class="col-lg-8 col-md-6 d-none d-md-block">
+<div class="col-lg-8">
 <div class="header__nav">
-<nav class="header__menu">
+<nav class="header__menu mobile-menu">
 <ul>
-<li class="active"><a href="./index.html">Home</a></li>
-<li><a href="./categories.html">Shop <i class="fas fa-chevron-down"></i></a>
+<li><a href="./index.html">Homepage</a></li>
+<li><a href="./categories.html">Categories <span class="arrow_carrot-down"></span></a>
 <ul class="dropdown">
-<li><a href="./categories.html">Our Products</a></li>
+<li><a href="./categories.html">Products</a></li>
+<li><a href="./anime-details.html">Product Details</a></li>
 </ul>
 </li>
-<li><a href="./blog.html">About Us!</a></li>
+<li class="active"><a href="./blog.html">About Us</a></li>
 </ul>
 </nav>
 </div>
 </div>
-
-
+<div class="col-lg-2">
+<div class="header__right">
+<a class="search-switch" href="#"><span class="icon_search"></span></a>
+<a href="./login.html"><span class="icon_profile"></span></a>
+</div>
+</div>
+</div>
+<div id="mobile-menu-wrap"></div>
+</div>
 </header>
 <section class="features spad" style="margin-top: 130px;">
 <div class="container">
@@ -1506,7 +1512,6 @@ body {
 </div>
 </div>
 </div>
-
 </section>
 <!-- Footer Section Begin -->
 <footer class="footer">
