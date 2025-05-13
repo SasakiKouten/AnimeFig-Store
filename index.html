@@ -882,73 +882,85 @@ body {
   gtag('js', new Date());
   gtag('config', 'G-W709BLRVNX');
 </script>
-
 <style>
-/* TOP SELLING NEW STYLE */
-.top-selling-card {
+body {
+    background-image: url('img/bg-product-overlay.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.product__sidebar__view__item {
     position: relative;
+    background-size: cover;
+    background-position: center;
     border-radius: 12px;
     overflow: hidden;
+    padding: 20px 15px;
     margin-bottom: 20px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    transition: transform 0.3s ease;
-}
-
-.top-selling-card:hover {
-    transform: scale(1.02);
-}
-
-.top-selling-image {
-    width: 100%;
-    display: block;
-}
-
-.top-selling-overlay {
-    position: absolute;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.6);
-    width: 100%;
-    padding: 10px 15px;
     color: white;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
+    height: 160px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
 }
 
-.top-selling-overlay .title {
-    font-weight: bold;
-    font-size: 16px;
-    margin-bottom: 4px;
+.product__sidebar__view__item:hover {
+    transform: translateY(-5px);
 }
 
-.top-selling-overlay .sold {
+.product__sidebar__view__item .ep {
+    font-size: 13px;
+    background: rgba(0,0,0,0.5);
+    padding: 4px 10px;
+    border-radius: 10px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.product__sidebar__view__item .view {
     font-size: 14px;
-    color: #ccc;
-}
-
-.top-selling-price {
+    background: rgba(0,0,0,0.6);
+    padding: 5px 10px;
+    border-radius: 10px;
     position: absolute;
     top: 10px;
     right: 10px;
-    background: rgba(255, 255, 255, 0.95);
+}
+
+.product__sidebar__view__item h5 {
+    font-size: 14px;
+    background: rgba(0,0,0,0.6);
     padding: 6px 10px;
     border-radius: 8px;
-    font-weight: bold;
-    color: #000;
-    font-size: 14px;
+    margin-top: auto;
+    display: inline-block;
+    color: #fff;
 }
 
-/* HOMEPAGE BACKGROUND */
-body {
-    background: url('36b0fea3-ec78-43d2-b01a-ecf847d098e2.png') no-repeat center center fixed;
-    background-size: cover;
-    background-attachment: fixed;
-    background-blend-mode: multiply;
-    background-color: rgba(0, 0, 0, 0.9);
-}
-</style>
+@media (max-width: 768px) {
+    .product__sidebar__view__item {
+        height: 130px;
+        padding: 15px 10px;
+    }
 
-</head>
+    .product__sidebar__view__item h5 {
+        font-size: 13px;
+    }
+
+    .product__sidebar__view__item .view,
+    .product__sidebar__view__item .ep {
+        font-size: 12px;
+        padding: 3px 8px;
+    }
+}
+</style></head>
 <body>
 <div id="preloder">
 <div class="loader"></div>
@@ -965,7 +977,6 @@ body {
 <li><a class="text-white" href="./blog.html">About Us!</a></li>
 </ul>
 </div>
-
 <div class="col-lg-8 col-md-6 d-none d-md-block">
 <div class="header__nav">
 <nav class="header__menu">
@@ -981,8 +992,6 @@ body {
 </nav>
 </div>
 </div>
-
-
 </header>
 <section class="features spad" style="margin-top: 130px;">
 <div class="container">
@@ -1572,7 +1581,6 @@ body {
 </div>
 </div>
 </div>
-
 </section>
 <!-- Footer Section Begin -->
 <footer class="footer">
