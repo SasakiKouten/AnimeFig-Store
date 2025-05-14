@@ -785,6 +785,28 @@ body {
   }
 }
 
+
+.hero-bg {
+  background-image: url('img/trending/komik.jpg'); /* Ganti dengan path gambarmu */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 0;
+}
+
+.hero-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* efek samar gelap */
+  z-index: -1;
+}
+
 </style>
 <style>
 /* Pastikan nama produk dan harga selalu terlihat di semua device */
@@ -989,6 +1011,7 @@ body {
 
 </head>
 <body>
+<div class="hero-bg">
 <div id="preloder">
 <div class="loader"></div>
 </div>
@@ -1040,6 +1063,7 @@ body {
 <!-- Header End -->
 <!-- Features Section -->
 <!-- Product Section Begin -->
+</div>
 <section class="product spad">
 <div class="container">
 <div class="preview-label text-center" style="color: #FFD700; font-size: 1.8rem; font-weight: bold; margin-bottom: 20px;">
