@@ -106,7 +106,7 @@ body {
             backdrop-filter: blur(10px);
             padding: 15px 0;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-            position: fixed;
+            position: static;
             width: 100%;
             z-index: 1000;
             transition: all 0.3s ease;
@@ -540,7 +540,7 @@ body {
         
         /* Search Modal */
         .search-model {
-            position: fixed;
+            position: static;
             width: 100%;
             height: 100%;
             background: rgba(0, 0, 0, 0.9);
@@ -709,7 +709,7 @@ body {
 .ad-banner-carousel {
   position: relative;
   width: 100%;
-  height: 800px; /* Expand to fill gap */
+  height: 1150px; /* Expand to fill gap */
   overflow: hidden;
 }
 
@@ -1033,14 +1033,21 @@ body {
 </style>
 </head>
 <body><div class="anime-bg-wrapper"><header class="header">
-<div class="mobile-menu-toggle d-md-none d-block text-end pe-3">
+
+    <div class="header__logo d-inline-block" style="padding-left: 20px;">
+      <a href="index.html">
+        <img src="img/trending/logo.png" alt="AnimeFig Store" style="max-height: 50px;">
+      </a>
+    </div>
+    <div class="mobile-menu-toggle d-md-none d-block text-end pe-3">
 <i class="fas fa-bars text-white fs-3" id="mobileMenuBtn"></i>
 </div>
 <div class="d-md-none d-block bg-dark text-white p-3 position-absolute w-100" id="mobileMenu" style="top: 80px; display: none; z-index: 999;">
 <ul class="list-unstyled m-0">
-<li class="mb-2"><a class="text-white" href="./index.html">Home</a></li>
-<li class="mb-2"><a class="text-white" href="./categories.html">Shop</a></li>
-<li><a class="text-white" href="./blog.html">About Us!</a></li>
+  <li class="mb-2"><a class="text-white" href="./index.html">Home</a></li>
+  <li class="mb-2"><a class="text-white" href="./categories.html">Shop</a></li>
+  <li class="mb-2"><a class="text-white" href="./categories.html">Our Products</a></li>
+  <li><a class="text-white" href="./blog.html">About Us!</a></li>
 </ul>
 </div>
 <div class="col-lg-8 col-md-6 d-none d-md-block">
