@@ -908,6 +908,27 @@ body {
         font-size: 16px;
     }
 }
+
+.preview-inside {
+    position: absolute;
+    bottom: -20px;
+    right: 30px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #FFD700;
+    background-color: rgba(0,0,0,0.6);
+    padding: 6px 16px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(255,255,0,0.5);
+}
+
+@media (max-width: 768px) {
+    .preview-inside {
+        right: 15px;
+        font-size: 1rem;
+        padding: 4px 12px;
+    }
+}
 </style>
 <style>
 /* Pastikan nama produk dan harga selalu terlihat di semua device */
@@ -1142,7 +1163,7 @@ body {
 </nav>
 </div>
 </div>
-</header><section class="features spad" style="margin-top: 130px;">
+</header><section class="features spad" style="margin-top: 130px; margin-bottom: 0;">
 <div class="container">
 <div class="row text-white text-center">
 <div class="col-lg-12">
@@ -1153,14 +1174,12 @@ body {
             and top-rated <strong>Video Games</strong>. We bring the best collectibles from popular series like
             <em>Jujutsu Kaisen, Naruto, Demon Slayer</em>, and many more right to your doorstep.
             Explore our curated selection and level up your collection today.
-          </p>
+          </p><div class="preview-inside">PREVIEW</div>
 </div>
 </div>
 </div>
 </div>
-</section><div class="preview-label text-center" style="color: #FFD700; font-size: 1.8rem; font-weight: bold; margin-bottom: 20px;">
-  PREVIEW
-</div><div class="ad-banner-container" style="margin-bottom: 50px;">
+</section><div class="ad-banner-container" style="margin-bottom: 50px;">
 <div class="ad-banner-carousel">
 <div class="ad-banner-slide active">
 <img alt="Exclusive Deals" src="img/live/live-1.jpg"/>
