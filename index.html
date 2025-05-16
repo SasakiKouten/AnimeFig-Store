@@ -830,6 +830,26 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: -1;
 }
+
+@media (max-width: 768px) {
+  .logo {
+    max-height: 80px !important;
+    margin-top: 10px !important;
+    margin-left: 10px !important;
+    position: relative !important;
+    z-index: 10 !important;
+  }
+
+  #mobileMenu {
+    top: 100px !important;
+    z-index: 5;
+  }
+
+  .mobile-menu-toggle {
+    z-index: 15;
+    position: relative;
+  }
+}
 </style>
 <style>
 /* Pastikan nama produk dan harga selalu terlihat di semua device */
@@ -1035,7 +1055,7 @@ body {
 <body><div class="anime-bg-wrapper"><header class="header">
 <div class="header__logo d-inline-block" style="padding-left: 20px; margin-bottom: 10px;">
 <a href="index.html">
-<img alt="AnimeFig Store" src="img/trending/logo.png" style="max-height: 160px;"/>
+<img alt="AnimeFig Store" src="img/trending/logo.png" style="max-height: 160px;"/ class="logo">
 </a>
 </div>
 <div class="mobile-menu-toggle d-md-none d-block text-end pe-3">
@@ -1661,7 +1681,7 @@ body {
 <footer class="footer">
 <div style="display: flex; justify-content: space-around; flex-wrap: wrap; background-color: #000; color: white; padding: 40px 20px; font-family: Arial, sans-serif;">
 <div style="flex: 1; min-width: 250px; margin: 10px;">
-<img alt="AnimeFig Store" src="img/trending/logo.png" style="width: 180px;"/>
+<img alt="AnimeFig Store" src="img/trending/logo.png" style="width: 180px;"/ class="logo">
 <p style="margin-top: 10px;">Your premier destination for premium anime figures, manga, and collectibles.</p>
 <div>
 <a href="#" style="margin-right: 10px;"><img alt="Facebook" src="img/trending/fb.png" width="20"/></a>
